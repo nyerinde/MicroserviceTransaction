@@ -36,6 +36,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
     {
         PasswordEncoder encoder= new BCryptPasswordEncoder();
 
+        // https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/in-memory.html
+        // https://www.baeldung.com/spring-security-5-default-password-encoder
+
        auth.inMemoryAuthentication()
                .passwordEncoder(encoder)
                .withUser(secureKeyUsername)

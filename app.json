@@ -1,0 +1,13 @@
+{
+  "name": "universal-haluk-transaction",
+
+  "buildpacks":
+          [
+            {
+              "url":"heroku/gradle"
+            }
+
+          ]
+
+
+}
